@@ -1,0 +1,3 @@
+<?php
+//000000007200a:2:{s:6:"status";s:2:"OK";s:6:"result";a:5:{s:8:"location";a:2:{s:3:"lng";d:103.6459660000000013724275049753487110137939453125;s:3:"lat";d:38.99099799999999760302671347744762897491455078125;}s:17:"formatted_address";s:27:"甘肃省武威市民勤县";s:8:"business";s:0:"";s:16:"addressComponent";a:7:{s:4:"city";s:9:"武威市";s:9:"direction";s:0:"";s:8:"distance";s:0:"";s:8:"district";s:9:"民勤县";s:8:"province";s:9:"甘肃省";s:6:"street";s:0:"";s:13:"street_number";s:0:"";}s:8:"cityCode";i:118;}}
+?>
