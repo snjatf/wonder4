@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title><?php echo ($title); ?></title>
+	<title>wonder4-<?php echo ($title); ?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -18,6 +18,7 @@
 
     <script type="text/javascript" src="/wonder4/Public/bootstrap/js/ie-emulation-modes-warning.js"></script>
     <script type="text/javascript" src="/wonder4/Public/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/wonder4/Public/bootstrap/css/font-awesome.min.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="/wonder4/Public/css/article.add.css" />
     <script type="text/javascript" src="/wonder4/Public/bootstrap/js/self.js"></script>
 </head>
-<body style="margin-top: 70px;min-height: 500px;" class="container">
+<body style="margin-top: 60px;min-height: 500px;" class="container">
 
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -40,11 +41,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Wonder4-个人博客</a>
+          <a class="navbar-brand" href="<?php echo U('index/index');?>">Wonder4-个人博客</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">首页</a></li>  
+            <li class="active"><a href="<?php echo U('index/index');?>">首页</a></li>  
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">代码狗的笔记<span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -59,7 +60,8 @@
             </li>
             <li><a href="#DailyTips">日常小贴士</a></li>
             <li><a href="#DownloadStore">下载中心</a></li>  
-            <li><a href="#GuestBook">留言板</a></li>         
+            <li><a href="#GuestBook">留言板</a></li> 
+            <li><a href="<?php echo U('Home/Article/index');?>">新增文章</a></li>          
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="AboutMe">关于我<span class="sr-only">(current)</span></a></li>
@@ -73,16 +75,17 @@
 
 <div class="panel panel-default border1">
 	<div class="panel-heading">
-        <h2 class="panel-title" style="width: 100px;"><span class="glyphicon glyphicon-list-alt"></span> 最新动态</h2>
+        <h2 class="panel-title" style="width: 100px;">
+        <span class="glyphicon glyphicon-list-alt"> 精华区</span></h2>
         <span class="pull-right"><a href="/news">更多»</a></span>
     </div>
     <div class="panel-body">
         <ul class="index-list">
             <?php if(is_array($articleList)): $i = 0; $__LIST__ = $articleList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$articleList): $mod = ($i % 2 );++$i;?><li>
-                <span class="fa fa-question-circle fa-fw"></span>
+                <span class="fa fa-file-text-o fa-fw"></span>
                 <a href="../article/getSingle?id=<?php echo ($articleList["id"]); ?>"><?php echo ($articleList["articlename"]); ?></a>
                 <span class="info">
-                <a href="#" rel="author" data-original-title="" title=""><?php echo ($articleList["articleauthorname"]); ?></a> 发布于：<?php echo ($articleList["articlepublishdate"]); ?>
+                <a href="#" rel="author" data-original-title="" title=""><?php echo ($articleList["articleauthorname"]); ?></a> 发布于：<?php echo (substr($articleList["articlepublishdate"],0,10)); ?>
                 <span class="stat">199浏览 / 0评论</span>
             	</span>
             </li><?php endforeach; endif; else: echo "" ;endif; ?>

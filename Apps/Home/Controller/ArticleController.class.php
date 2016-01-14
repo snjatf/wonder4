@@ -4,7 +4,7 @@ use Think\Controller;
 use Model\ArticleModel;
 class ArticleController extends Controller {
     public function index(){
-    	$this->assign("name","wonder4");
+    	$this->assign("title","新增文章");
     	$this->display('Article_Add');
     }
 
@@ -25,7 +25,7 @@ class ArticleController extends Controller {
     {
     	$article = M("Article"); // 实例化User对象
     	// 查找status值为1的用户数据 以创建时间排序 返回10条数据
-		$list = $article->order('articlePublishDate')->limit(10)->select();
+		$list = $article->order('articlePublishDate')->limit(20)->select();
 		$this->assign("title","文章列表");
 		$this->assign("articleList",$list);
     	$this->display('Article_List');
@@ -35,7 +35,7 @@ class ArticleController extends Controller {
     {
     	$article = M("Article"); // 实例化User对象
     	$articleE=$article->where("id=".$id)->find();
-    	// var_dump($articleE);die;	
+    	$this->assign("title",$articleE["articlename"]);
     	$this->assign($articleE);
     	$this->display('Article_Show');
     }

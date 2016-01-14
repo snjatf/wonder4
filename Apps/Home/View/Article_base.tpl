@@ -18,6 +18,7 @@
 
     <load href='__PUBLIC__/bootstrap/js/ie-emulation-modes-warning.js' />
     <load href='__PUBLIC__/bootstrap/js/bootstrap.min.js' />
+    <load href='__PUBLIC__/bootstrap/css/font-awesome.min.css' />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,7 +29,7 @@
     <load href='__PUBLIC__/css/article.add.css' />
     <load href='__PUBLIC__/bootstrap/js/self.js' />
 </head>
-<body style="margin-top: 70px;min-height: 500px;" class="container">
+<body style="margin-top: 60px;min-height: 500px;" class="container">
 <block name="header">
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -40,11 +41,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Wonder4-个人博客</a>
+          <a class="navbar-brand" href="{:U('index/index')}">Wonder4-个人博客</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">首页</a></li>  
+            <li class="active"><a href="{:U('index/index')}">首页</a></li>  
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">代码狗的笔记<span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -59,7 +60,8 @@
             </li>
             <li><a href="#DailyTips">日常小贴士</a></li>
             <li><a href="#DownloadStore">下载中心</a></li>  
-            <li><a href="#GuestBook">留言板</a></li>         
+            <li><a href="#GuestBook">留言板</a></li> 
+            <li><a href="{:U('Home/Article/index')}">新增文章</a></li>          
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="AboutMe">关于我<span class="sr-only">(current)</span></a></li>

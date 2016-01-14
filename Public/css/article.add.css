@@ -39,7 +39,6 @@ a{text-decoration: none;color: #337ab7;background-color: transparent;}
     margin: 0;
     font-size: 14px;
     display: inline;
-    width: 60px;
 }
 .panel .panel-heading{
 	background: #FCFCFC;
@@ -72,19 +71,6 @@ a{text-decoration: none;color: #337ab7;background-color: transparent;}
     font-size: 14px;
 }
 
-.fa-fw {
-    width: 1.28571429em;
-    text-align: center;
-}
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 ul {
     padding-left: 20px;
 }
@@ -100,4 +86,8 @@ ul, ol {
     list-style: none;
     line-height: 2.6em;
     border-bottom: #eee dashed 1px;
+}
+.index-list > li > span {
+    color: #999;
+    font-size: 14px;
 }

@@ -18,6 +18,7 @@
 
     <script type="text/javascript" src="/wonder4/Public/bootstrap/js/ie-emulation-modes-warning.js"></script>
     <script type="text/javascript" src="/wonder4/Public/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/wonder4/Public/bootstrap/css/font-awesome.min.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -25,9 +26,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="/wonder4/Public/bootstrap/css/self.css" />
+    <link rel="stylesheet" type="text/css" href="/wonder4/Public/css/article.add.css" />
     <script type="text/javascript" src="/wonder4/Public/bootstrap/js/self.js"></script>
 </head>
-<body style="margin-top: 70px;min-height: 500px;" class="container">
+<body style="margin-top: 60px;min-height: 500px;" class="container">
 
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -39,11 +41,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Wonder4-个人博客</a>
+          <a class="navbar-brand" href="<?php echo U('index/index');?>">Wonder4-个人博客</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">首页</a></li>  
+            <li class="active"><a href="<?php echo U('index/index');?>">首页</a></li>  
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">代码狗的笔记<span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -58,7 +60,8 @@
             </li>
             <li><a href="#DailyTips">日常小贴士</a></li>
             <li><a href="#DownloadStore">下载中心</a></li>  
-            <li><a href="#GuestBook">留言板</a></li>         
+            <li><a href="#GuestBook">留言板</a></li> 
+            <li><a href="<?php echo U('Home/Article/index');?>">新增文章</a></li>          
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="AboutMe">关于我<span class="sr-only">(current)</span></a></li>
@@ -116,7 +119,7 @@
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
           <div class="list-group">
             <a href="#" class="list-group-item active">文章分类</a>
-            <a href="./Home/Article/GetAllList" class="list-group-item">测试文章列表</a>
+            <a href="<?php echo U('Home/Article/GetAllList');?>" class="list-group-item">测试文章列表</a>
             <a href="#" class="list-group-item">分类一</a>
             <a href="#" class="list-group-item">分类一</a>
             <a href="#" class="list-group-item">分类一</a>

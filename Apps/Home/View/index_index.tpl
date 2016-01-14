@@ -47,7 +47,7 @@
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
           <div class="list-group">
             <a href="#" class="list-group-item active">文章分类</a>
-            <a href="./Home/Article/GetAllList" class="list-group-item">测试文章列表</a>
+            <a href="{:U('Home/Article/GetAllList')}" class="list-group-item">测试文章列表</a>
             <a href="#" class="list-group-item">分类一</a>
             <a href="#" class="list-group-item">分类一</a>
             <a href="#" class="list-group-item">分类一</a>
