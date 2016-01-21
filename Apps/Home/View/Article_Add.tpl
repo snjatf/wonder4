@@ -12,7 +12,7 @@
     <script type="text/javascript">
         var ue = UE.getEditor('container');
     </script>
-<form id="article_add" action="../home/article/add" method="post">
+<form id="article_add" action="../article/add" method="post">
 	<div id="mainpanle">
 		<div id="div4articleName" class="form-group has-feedback">
 	    <label for="articleName">文章标题</label>

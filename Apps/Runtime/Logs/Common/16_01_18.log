@@ -1,0 +1,36 @@
+[ 2016-01-18T21:06:24+08:00 ] ::1 /wonder4/Public/bootstrap/fonts/fontawesome-webfont.woff2?v=4.4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+ERR: 无法加载模块:Public
+
+[ 2016-01-18T21:06:24+08:00 ] ::1 /wonder4/Public/bootstrap/fonts/fontawesome-webfont.woff?v=4.4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+ERR: 无法加载模块:Public
+
+[ 2016-01-18T21:06:24+08:00 ] ::1 /wonder4/Public/bootstrap/fonts/fontawesome-webfont.ttf?v=4.4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+ERR: 无法加载模块:Public
+
+[ 2016-01-18T22:18:02+08:00 ] ::1 /wonder4/Public/bootstrap/fonts/fontawesome-webfont.woff2?v=4.4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+ERR: 无法加载模块:Public
+
+[ 2016-01-18T22:18:02+08:00 ] ::1 /wonder4/Public/bootstrap/fonts/fontawesome-webfont.woff?v=4.4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+ERR: 无法加载模块:Public
+
+[ 2016-01-18T22:18:02+08:00 ] ::1 /wonder4/Public/bootstrap/fonts/fontawesome-webfont.ttf?v=4.4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002747s ]
+ERR: 无法加载模块:Public
+

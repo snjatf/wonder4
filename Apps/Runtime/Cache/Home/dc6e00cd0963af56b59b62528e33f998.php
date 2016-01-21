@@ -61,7 +61,9 @@
             <li><a href="#DailyTips">日常小贴士</a></li>
             <li><a href="#DownloadStore">下载中心</a></li>  
             <li><a href="#GuestBook">留言板</a></li> 
-            <li><a href="<?php echo U('Home/Article/index');?>">新增文章</a></li>          
+            <li><a href="<?php echo U('Home/Article/index');?>">新增文章</a></li>
+            <li><a href="<?php echo U('Admin/User/reg');?>">注册</a></li>   
+            <li><a href="<?php echo U('Admin/User/log');?>">登陆</a></li>          
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="AboutMe">关于我<span class="sr-only">(current)</span></a></li>
@@ -83,7 +85,7 @@
     <script type="text/javascript">
         var ue = UE.getEditor('container');
     </script>
-<form id="article_add" action="../home/article/add" method="post">
+<form id="article_add" action="../article/add" method="post">
 	<div id="mainpanle">
 		<div id="div4articleName" class="form-group has-feedback">
 	    <label for="articleName">文章标题</label>

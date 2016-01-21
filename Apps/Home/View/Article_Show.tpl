@@ -12,6 +12,6 @@
 	<load href='__PUBLIC__/ueditor/third-party/SyntaxHighlighter/shCore.js' />
 	<load href='__PUBLIC__/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css' />
 	<script type="text/javascript">
-	        	SyntaxHighlighter.all();	
+	        	SyntaxHighlighter.all();
 	</script>
 </block>

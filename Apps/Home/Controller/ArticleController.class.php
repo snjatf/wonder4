@@ -12,12 +12,11 @@ class ArticleController extends Controller {
     {
     	$articleM=D("Article");
     	$articleM->create($_POST);
-    	// print_r($articleM);
     	$articleM->articlePublishDate=date('y-m-d h:i:s',time());
     	if ($articleM->add()) {
-    		echo "success";
+    		$this->success('新增成功', 'getAllList',1);
     	}else{
-			echo "error";
+			$this->error('操作失败','add',2);
     	}
     }
 
@@ -25,7 +24,7 @@ class ArticleController extends Controller {
     {
     	$article = M("Article"); // 实例化User对象
     	// 查找status值为1的用户数据 以创建时间排序 返回10条数据
-		$list = $article->order('articlePublishDate')->limit(20)->select();
+		$list = $article->order('articlePublishDate')->limit(100)->select();
 		$this->assign("title","文章列表");
 		$this->assign("articleList",$list);
     	$this->display('Article_List');
@@ -39,4 +38,6 @@ class ArticleController extends Controller {
     	$this->assign($articleE);
     	$this->display('Article_Show');
     }
+
+    
 }

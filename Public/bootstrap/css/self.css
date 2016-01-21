@@ -54,3 +54,16 @@ footer {
     width: 50%; /* 6 columns */
   }
 }
+
+a{text-decoration: none;color: #337ab7;background-color: transparent;}
+.textcenter{text-align: center;}
+.border1{border: 1px solid  #d1d1d1;}
+.bborder1{border-bottom: 1px solid #d1d1d1;}
+.blodtext{
+  font-weight: bold;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
