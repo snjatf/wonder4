@@ -25,7 +25,7 @@
 			<script id="container" name="articleContent" type="text/plain">
 			</script>
 	  	</div>
-	  	<button type="button" class="btn btn-success" onclick="AddArticleCheck()">提交</button>
+	  	<button type="button" class="btn btn-success" onclick="AddArticle()">提交</button>
 	</div>
 <input type="hidden" name="articleAuthorid" value="2011114122">
 <input type="hidden" name="articleAuthorName" value="wonder4">

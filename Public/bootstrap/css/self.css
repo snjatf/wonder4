@@ -3,11 +3,9 @@ body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 footer {
-  padding: 20px 0;
+  padding: 15px 0 10px 0;
   text-align: center;
   border-top: 1px solid #d1d1d1;
-  padding-top: 15px;
-  margin-top: 20px;
 }
 
 /*
@@ -59,6 +57,7 @@ a{text-decoration: none;color: #337ab7;background-color: transparent;}
 .textcenter{text-align: center;}
 .border1{border: 1px solid  #d1d1d1;}
 .bborder1{border-bottom: 1px solid #d1d1d1;}
+.rborder1{border-right: 1px solid #d1d1d1;}
 .blodtext{
   font-weight: bold;
 }
@@ -67,3 +66,25 @@ a{text-decoration: none;color: #337ab7;background-color: transparent;}
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+.redtext{color: red;}
+.blacktext{color: black;}
+
+.displaynone{display: none;}
+.btn-w100{width: 100px;}
+.btn-w120{width: 120px;}
+.margt50{margin-top: 50px;}
+.margt80{margin-top: 80px;}
+.marginauto{margin:0 auto;}
+
+.width100{width: 100px;}
+.padlr15{padding: 0 15px;}
+
+.minhit510{min-height: 510px;}
+.minhit520{min-height: 520px;}
+.valignt{vertical-align: top;}
+
+.floatl{float: left;}
+
+.left25{width: 25%;}
+.right75{width: 75%;}

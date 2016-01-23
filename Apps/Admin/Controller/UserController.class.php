@@ -23,11 +23,10 @@ class UserController extends Controller {
     	//var_dump($_POST);die;
     	$userM->create($_POST);
     	$userM->AddDate=date('y-m-d h:i:s',time());
-    	//print_r($userM);die;
     	if ($userM->add()) {
-    		$this->success('新增成功', 'reg',1);
+    		$this->success('恭喜注册成功', '../index/index',1);
     	}else{
-			$this->error('操作失败','reg',2);
+			$this->error('抱歉，注册失败','reg',2);
     	}
     }
 }

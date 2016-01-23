@@ -1,27 +1,29 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-use Admin\Model\FunctionsModel;
+use models\MenuModel;
 class MenuController extends Controller {
+    private $pageArray = array('title' => "后台控制面板",'breadcrumb'=>array());
     public function index(){
-
-
-        //
-
-        $obecjt=array("Location_X"=>"38.990998","Location_Y"=>"103.645966");
-        echo '<meta http-equiv="Content-Type" content="text/hmtl; charset=utf-8" />';
-        $city=FunctionsModel::GetCityNameByLocation($obecjt);
-        if ($city["status"]=="OK") {
-        	$cityName=$city["result"]["addressComponent"]["city"];
-        	$cityNameSub=substr($cityName, 0,strlen($cityName)-3);
-        	echo  FunctionsModel::WeatherService($cityNameSub);
-        }
-
+        $this->assign("pageArray",$this->pageArray);
+        $this->display("add");
     }
 
-    public function test()
+    public function AddView($pid)
     {
-    	echo '<meta http-equiv="Content-Type" content="text/hmtl; charset=utf-8" />';
-    	FunctionsModel::SplicingWeatherText();
+        $this->assign("pageArray",$this->pageArray);
+        $this->display("add");
     }
+
+    public function AddMenu()
+    {
+        $menuModel=D("menu");
+        $menuModel->create($_POST);
+        if ($menuModel->add()) {
+            $this->success('新增成功', 'index',1);
+        }else{
+            $this->error('抱歉，新增失败','index',2);
+        }
+    }
+
 }
