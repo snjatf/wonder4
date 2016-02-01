@@ -26,8 +26,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <load href='__PUBLIC__/bootstrap/css/self.css' />
-    <load href='__PUBLIC__/css/article.add.css' />
-    <load href='__PUBLIC__/bootstrap/js/self.js' />
 </head>
 <body style="margin-top: 60px;min-height: 500px;" class="container">
 <block name="header">

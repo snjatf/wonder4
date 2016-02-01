@@ -76,8 +76,10 @@ a{text-decoration: none;color: #337ab7;background-color: transparent;}
 .margt50{margin-top: 50px;}
 .margt80{margin-top: 80px;}
 .marginauto{margin:0 auto;}
+.margtb25{margin-top: 25px;margin-bottom: 15px;}
 
 .width100{width: 100px;}
+.minwidth100{min-width: 100px;}
 .padlr15{padding: 0 15px;}
 
 .minhit510{min-height: 510px;}
@@ -88,3 +90,166 @@ a{text-decoration: none;color: #337ab7;background-color: transparent;}
 
 .left25{width: 25%;}
 .right75{width: 75%;}
+
+
+.panel-body h2 a:link, .panel-body h2 a:visited {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+
+.panel-body h2{margin-top: 0;margin-bottom: 0;}
+
+.panel-body .post-info {
+    height: 15px;
+    font-size: 12px;
+    color: #8c8c8c;
+    padding: 17px 0;
+    list-style: none;
+}
+
+.panel-body .post-info .author {
+    padding-right: 10px;
+    background: url(http://bbs.smartisan.com/template/smartisan/src/img/split.png) right -25px no-repeat;
+    float: left;
+}
+
+.panel-body .post-info .time {
+    color: #B2B2B2;
+    padding-left: 10px;
+    float: left;
+}
+
+.panel-body .post-info .review {
+    text-align: right;
+    background: url(http://bbs.smartisan.com/template/smartisan/src/img/review.png) left center no-repeat;
+    padding-left: 30px;
+    float: right;
+}
+
+.panel-body .post-info .browse {
+    text-align: right;
+    background: url(http://bbs.smartisan.com/template/smartisan/src/img/browse.png) left center no-repeat;
+    padding-left: 33px;
+    margin-right: 20px;
+    float: right;
+}
+
+.panel-body .content-picture {
+    /*height: 300px;*/
+}
+
+.panel-body p {
+    margin: 16px 0 0;
+    font-size: 14px;
+    color: #737373;
+    line-height: 200%;
+}
+.section-content .content-box{
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.section-content .content-box p span {
+    background: url(http://bbs.smartisan.com/template/smartisan/src/img/full-text.png) right -2px no-repeat;
+    padding-right: 16px;
+    margin-left: 16px;
+}
+
+.section-content .content-box p a {
+    text-decoration: none;
+    color: #cc3e39;
+}
+
+.forum_list {
+    padding: 10px 0 0 0;
+}
+
+.forum_list ul {
+    padding-left: 0px;
+}
+
+.forum_list ul li.thread_1, .forum_list ul li.thread_2 {
+    border-top: 1px solid #dddddd;
+}
+.forum_list ul li {
+    list-style: none; 
+    float: left;
+    width: 50%;
+    margin: 0 !important;
+    padding: 10px 0 !important;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+}
+
+.borderr1{border-right: 1px solid #dddddd; }
+
+.activeuser-list ul {
+  list-style: none;
+    margin-top: 15px;
+    padding: 0 0 10px;
+}
+
+.activeuser-list li {
+    position: relative;
+    height: 64px;
+    line-height: 18px;
+    margin: 0 0 15px 80px;
+    color: #393939;
+    font-size: 12px;
+}
+
+.activeuser-list li a {
+    line-height: 24px;
+    font-size: 14px;
+    outline: none;
+    color: #6f6f6f;
+    text-decoration: none;
+}
+.activeuser-list li a:hover {
+color:#ff6600;
+}
+.activeuser-list li img {
+    position: absolute;
+    left: -80px;
+    top: 0;
+}
+
+.star li span {
+    display: block;
+    color: #aab2bd;
+}
+
+em{
+  font-style: normal;
+    font-weight: normal;
+}
+
+/* 回到顶部 */
+ #returnTop {
+  _display:none;
+  position:fixed;
+  _position:absolute;
+  z-index:999;
+  right:15px;
+  bottom:-200px;
+  _bottom:auto;
+  width:36px;
+  height:65px;
+  text-indent:-999px;
+  overflow:hidden;
+  background-image:url(../../images/Top.png);
+  _background-image:url(../../images/Top.png);
+  background-repeat:no-repeat;
+  background-position:0 0;
+  transition:bottom 0.9s;
+  -webkit-transition:bottom 0.9s;
+  -moz-transition:bottom 0.9s;
+  -o-transition:bottom 0.9s;
+}
+#returnTop:hover {
+  background-position:0 -65px;
+}

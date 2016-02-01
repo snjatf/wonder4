@@ -6,13 +6,13 @@ class MenuController extends Controller {
     private $pageArray = array('title' => "后台控制面板",'breadcrumb'=>array());
     public function index(){
         $this->assign("pageArray",$this->pageArray);
-        $this->display("add");
+        $this->display("Add");
     }
 
     public function AddView($pid)
     {
         $this->assign("pageArray",$this->pageArray);
-        $this->display("add");
+        $this->display("Add");
     }
 
     public function AddMenu()

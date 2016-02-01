@@ -29,4 +29,10 @@ class UserController extends Controller {
 			$this->error('抱歉，注册失败','reg',2);
     	}
     }
+
+    public function UserEdit()
+    {
+        $this->assign("title","修改资料");
+        $this->display('User_Edit');
+    }
 }

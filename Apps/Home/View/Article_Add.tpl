@@ -10,7 +10,7 @@
     <load href='__PUBLIC__/js/Article.js' />
     <!-- 实例化编辑器 -->
     <script type="text/javascript">
-        var ue = UE.getEditor('container');
+        var ue = UE.getEditor('container',{autoHeightEnabled: true,autoFloatEnabled: true});
     </script>
 <form id="article_add" action="../article/add" method="post">
 	<div id="mainpanle">
