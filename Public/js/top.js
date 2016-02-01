@@ -9,14 +9,14 @@ IMYUAN || (IMYUAN = {});
                     a("html, body").animate({
                         scrollTop: 0
                     },
-                    300)
+                    800)
                 }),
                 c = null;
                 a(window).bind("scroll",
                 function() {
                     var d = a(document).scrollTop(),
                     e = a(window).height();
-                    0 < d ? b.css("bottom", "200px") : b.css("bottom", "-200px");
+                    0 < d ? b.css("bottom", "100px") : b.css("bottom", "-100px");
                     a.isIE6() && (b.hide(), clearTimeout(c), c = setTimeout(function() {
                         b.show();
                         clearTimeout(c)

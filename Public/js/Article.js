@@ -53,3 +53,13 @@ function AddUser()
 		$("#form_reg").submit();
 	}
 }
+
+
+// --------------------登陆页面JS----------------------------
+function RefleshVerify()
+{
+	$("#verifyimg").attr("src","../user/GetVerifyCode");
+}
+
+
+// --------------------登陆页面JS----------------------------

@@ -110,7 +110,7 @@ a{text-decoration: none;color: #337ab7;background-color: transparent;}
 
 .panel-body .post-info .author {
     padding-right: 10px;
-    background: url(http://bbs.smartisan.com/template/smartisan/src/img/split.png) right -25px no-repeat;
+    background: url(../../images/split.png) right -25px no-repeat;
     float: left;
 }
 
@@ -122,14 +122,14 @@ a{text-decoration: none;color: #337ab7;background-color: transparent;}
 
 .panel-body .post-info .review {
     text-align: right;
-    background: url(http://bbs.smartisan.com/template/smartisan/src/img/review.png) left center no-repeat;
+    background: url(../../images/review.png) left center no-repeat;
     padding-left: 30px;
     float: right;
 }
 
 .panel-body .post-info .browse {
     text-align: right;
-    background: url(http://bbs.smartisan.com/template/smartisan/src/img/browse.png) left center no-repeat;
+    background: url(../../images/browse.png) left center no-repeat;
     padding-left: 33px;
     margin-right: 20px;
     float: right;
@@ -152,7 +152,7 @@ a{text-decoration: none;color: #337ab7;background-color: transparent;}
 }
 
 .section-content .content-box p span {
-    background: url(http://bbs.smartisan.com/template/smartisan/src/img/full-text.png) right -2px no-repeat;
+    background: url(../../images/full-text.png) right -2px no-repeat;
     padding-right: 16px;
     margin-left: 16px;
 }
@@ -235,7 +235,7 @@ em{
   _position:absolute;
   z-index:999;
   right:15px;
-  bottom:-200px;
+  bottom:-100px;
   _bottom:auto;
   width:36px;
   height:65px;
@@ -253,3 +253,37 @@ em{
 #returnTop:hover {
   background-position:0 -65px;
 }
+
+.margb15{margin-bottom: 15px;}
+.margb35{margin-bottom: 35px;}
+.btn-w400{max-width: 400px;width: 100%;}
+.height50{height: 50px;}
+.font-s20{font-size: 20px;}
+
+#trigger {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    width: 100px;
+    text-align: center;
+}
+.wonder4Logo{
+  width: 200px;
+  float: left;
+}
+.wonder4Logo i {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../../images/icon.jpg) -20 -20 no-repeat;
+    _background-image: none;
+    _margin-left: -2px;
+    _margin-top: -4px;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/icon.jpg');
+}
+
+#verifycode{
+  width: 120px;
+}
+
+#verifyimg{height: 45px;float: right;}

@@ -122,6 +122,34 @@
       </div>
   	</div>
 	 <!-- 活跃用户  End-->
+	 <!-- 统计信息  Start-->
+	<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">统计信息</h3>
+      </div>
+      <div class="panel-body">
+      <div class="statistics-list">
+      	<ul class="list-group">
+		  <li class="list-group-item">
+		    <span class="badge">1412312</span>
+		    <span class="glyphicon glyphicon-globe"></span>
+		    访问量：
+		  </li>
+		   <li class="list-group-item">
+		    <span class="badge">14</span>
+		    <span class="glyphicon glyphicon-edit"></span>
+		    文章：
+		  </li>
+		   <li class="list-group-item">
+		    <span class="badge">142222</span>
+		    <span class="glyphicon glyphicon-pencil"></span>
+		    评论：
+		  </li>
+		</ul>
+      </div>
+      </div>
+  	</div>
+	 <!-- 统计信息  End-->
    </div>
    <!-- 右侧 End-->
 </div><!--/row-->
